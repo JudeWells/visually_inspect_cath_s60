@@ -6,6 +6,7 @@ which is stored in a csv file.
 Domain annotation images available at: /SAN/cath/cath_v4_3_0/visualise_cath_s60.zip
 
 RUN THE FOLLOWING COMMANDS TO GET STARTED:
+```
 mkdir cath_domain_inspection
 
 # install Pillow (python image library)
@@ -20,3 +21,4 @@ unzip visualise_cath_s60.zip
 
 # run the program
 python3 visually_inspect_images.py
+```
