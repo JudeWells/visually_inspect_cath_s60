@@ -7,17 +7,23 @@ Domain annotation images available at: /SAN/cath/cath_v4_3_0/visualise_cath_s60.
 
 RUN THE FOLLOWING COMMANDS TO GET STARTED:
 ```
-mkdir cath_domain_inspection
-
 # install Pillow (python image library)
 pip install Pillow
 
+mkdir cath_domain_inspection
+
 # make outer directory
 cd cath_domain_inspection
+
 # download images zip file from UCL CS server
 scp cs:/SAN/cath/cath_v4_3_0/visualise_cath_s60.zip ./
 # decompress images
 unzip visualise_cath_s60.zip
+
+# clone this repository
+git clone git@github.com:JudeWells/visually_inspect_cath_s60.git
+
+cd visually_inspect_cath_s60
 
 # run the program
 python3 visually_inspect_images.py
