@@ -1,14 +1,9 @@
 import os
 import csv
-from PIL import Image
 from subprocess import run
 
 folder_path = "../visualise_cath_s60"
 csv_file = os.path.join("S60_inspection_decisions.csv")
-
-def view_image(image_path):
-    with Image.open(image_path) as img:
-        img.show()
 
 def read_existing_decisions():
     if not os.path.exists(csv_file):
@@ -41,7 +36,7 @@ def main():
         if file.endswith("_combined.png"):
             file_base = file.replace("_combined.png", "")
             if file_base not in decisions:
-                view_image(os.path.join(folder_path, file))
+                os.system(f"open {os.path.join(folder_path, file)}")
                 decision = get_user_decision(file_base)
                 decisions[file_base] = decision
                 write_decision(decisions)
