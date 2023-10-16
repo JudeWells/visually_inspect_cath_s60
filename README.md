@@ -7,6 +7,9 @@ Domain annotation images available at: /SAN/cath/cath_v4_3_0/visualise_cath_s60.
 
 RUN THE FOLLOWING COMMANDS TO GET STARTED:
 ```
+# install matplotlib (python library used to visualise images)
+pip install matplotlib
+
 mkdir cath_domain_inspection
 
 # make outer directory
