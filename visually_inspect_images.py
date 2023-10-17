@@ -34,10 +34,7 @@ def write_decision(decisions):
 def get_user_decision(file_base):
     while True:
         decision = input(f"Viewing {file_base}.png. Enter your decision (1-accept, 2-reject, 0-no decision): ")
-        if decision == "3":
-            run(["pymol", os.path.join(folder_path, f"{file_base}.pse")])
-            continue
-        elif decision in ["1", "2", "0"]:
+        if decision in ["1", "2", "0"]:
             return decision
         else:
             print("Invalid option. Please enter 1, 2, 0")
