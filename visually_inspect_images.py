@@ -33,7 +33,7 @@ def write_decision(decisions):
 
 def get_user_decision(file_base):
     while True:
-        decision = input(f"Viewing {file_base}.png. Enter your decision (1-accept, 2-reject, 0-no decision): ")
+        decision = input("Viewing {}.png. Enter your decision (1-accept, 2-reject, 0-no decision): ".format(file_base))
         if decision in ["1", "2", "0"]:
             return decision
         else:
